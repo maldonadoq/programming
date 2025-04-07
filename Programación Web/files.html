@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Archivos Multimedia en HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f8fb;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .multimedia {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        img {
+            width: 100%;
+            max-width: 425px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        video,
+        audio {
+            width: 100%;
+            max-width: 500px;
+            border: 2px solid #0077cc;
+            border-radius: 12px;
+        }
+
+        .caption {
+            margin-top: 10px;
+            font-size: 0.95em;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Ejemplo de Imagen, Video y Audio</h1>
+
+    <div class="multimedia">
+        <!-- Imagen -->
+        <div>
+            <img src="https://i.pinimg.com/736x/94/17/69/941769178ecb56cc556ef5d267461475.jpg"
+                alt="Ejemplo de Imagen" />
+            <div class="caption">Esta es una imagen de ejemplo.</div>
+        </div>
+
+        <!-- Video -->
+        <div>
+            <video controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+            </video>
+            <div class="caption">Video demostrativo.</div>
+        </div>
+
+        <!-- Audio -->
+        <div>
+            <audio controls>
+                <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg" />
+            </audio>
+            <div class="caption">Audio de ejemplo.</div>
+        </div>
+    </div>
+</body>
+
+</html>
