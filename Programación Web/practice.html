@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Estructura de Página</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header,
+        footer {
+            background-color: #a8ccc7;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .main {
+            flex: 1;
+            display: flex;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .menu,
+        .avisos {
+            width: 20%;
+            background-color: #535861;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .contenido {
+            flex: 1;
+            background-color: #84494b;
+            color: white;
+            margin: 0 20px;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h2>Header</h2>
+        </header>
+
+        <div class="main">
+            <div class="menu">Opciones de menú</div>
+            <div class="contenido">Contenido</div>
+            <div class="avisos">Avisos</div>
+        </div>
+
+        <footer>
+            <h2>Pie de página (Footer)</h2>
+        </footer>
+    </div>
+</body>
+
+</html>
