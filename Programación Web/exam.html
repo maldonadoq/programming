@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Café del Saber</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2e6d9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header,
+        footer {
+            background-color: #6f4e37;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .contenido {
+            padding: 100px;
+        }
+
+        h2 {
+            color: #6f4e37;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #6f4e37;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        .boton-enviar {
+            background-color: #6f4e37;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+        }
+
+        .imagen {
+            width: 100%;
+            max-width: 400px;
+            display: block;
+            margin: 10px auto;
+        }
+
+        .enlace-nosotros {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Café del Saber</h1>
+        <p>Donde el conocimiento se sirve caliente ☕</p>
+    </header>
+
+    <div class="contenido">
+        <section>
+            <h2>Sobre nosotros</h2>
+            <p>Somos un espacio acogedor donde estudiantes, lectores y amantes del café pueden disfrutar de una buena
+                taza mientras estudian o conversan.</p>
+        </section>
+
+        <section>
+            <h2>Menú</h2>
+            <table>
+                <tr>
+                    <th>Producto</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                </tr>
+                <tr>
+                    <td>Café Espresso</td>
+                    <td>Shot intenso de café</td>
+                    <td>S/5.00</td>
+                </tr>
+                <tr>
+                    <td>Capuchino</td>
+                    <td>Café con leche espumosa</td>
+                    <td>S/6.50</td>
+                </tr>
+                <tr>
+                    <td>Té Chai</td>
+                    <td>Infusión especiada con leche</td>
+                    <td>S/6.00</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Galería</h2>
+            <img src="https://pqs.pe/wp-content/uploads/2016/08/pqs-como-abrir-cafeteria-800x533.jpg" alt="Imagen de cafetería" class="imagen">
+
+            <iframe width="400" height="250" src="https://www.youtube.com/embed/tgbNymZ7vqY" title="Video relajante"
+                style="display: block; margin: 0 auto;"
+                frameborder="0" allowfullscreen></iframe>
+        </section>
+
+        <section>
+            <h2>Contáctanos</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo">
+
+                <label for="mensaje">Comentario:</label>
+                <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+                <button type="submit" class="boton-enviar">Enviar</button>
+            </form>
+        </section>
+
+        <div class="enlace-nosotros">
+            <a href="we.html">Conoce más sobre nuestra historia</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Café del Saber - Todos los derechos reservados | Síguenos en Facebook e Instagram</p>
+    </footer>
+
+</body>
+
+</html>
