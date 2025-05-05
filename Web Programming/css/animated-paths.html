@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trayecto animado</title>
+
+    <style>
+        .box {
+            width: 50px;
+            height: 75px;
+            border-left: 5px solid hotpink;
+            border-right: 5px solid red;
+            background: indigo;
+            offset-path: path("m 0 25 h 150 v 100 h 100");
+            animation: move-path 3s infinite alternate linear;
+        }
+
+        @keyframes move-path {
+            0% {
+                offset-distance: 0%;
+            }
+
+            100% {
+                offset-distance: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

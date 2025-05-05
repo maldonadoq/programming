@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Web Animations</title>
+
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+
+    <script>
+        const box = document.querySelector(".box");
+
+        const KEYFRAMES = [
+            { "transform": "translate(0) rotate(0)" },
+            { "transform": "translate(400px) rotate(180deg)" }
+        ];
+
+        const OPTIONS = {
+            duration: 1000,
+            fill: "forwards"
+        };
+
+        box.animate(KEYFRAMES, OPTIONS);
+
+    </script>
+
+</body>
+
+</html>

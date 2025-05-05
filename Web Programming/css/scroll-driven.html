@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trayecto animado</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 200px;
+        }
+
+        section.page {
+            height: 50vh;
+            color: white;
+            background: color-mix(in srgb, skyblue, tomato var(--dark));
+        }
+
+        .page-1 {
+            --dark: 0%
+        }
+
+        .page-2 {
+            --dark: 25%
+        }
+
+        .page-3 {
+            --dark: 50%
+        }
+
+        .page-4 {
+            --dark: 75%
+        }
+
+        .indicator {
+            background: grey;
+            width: 150px;
+            height: 50px;
+            position: fixed;
+            top: 25px;
+            right: 50px;
+
+            & .bar {
+                width: 0%;
+                height: 100%;
+                background: gold;
+                animation: resize auto linear;
+                animation-timeline: scroll(root block);
+            }
+        }
+
+        @keyframes resize {
+            0% {
+                width: 0%
+            }
+
+            100% {
+                width: 100%
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="page page-1">Página 1</section>
+    <section class="page page-2">Página 2</section>
+    <section class="page page-3">Página 3</section>
+    <section class="page page-4">Página 4</section>
+    <div class="indicator">
+        <div class="bar"></div>
+    </div>
+
+</body>
+
+</html>

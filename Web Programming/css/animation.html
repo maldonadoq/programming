@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Animación</title>
+
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background: grey;
+            animation: change-color 3s infinite alternate linear;
+        }
+
+        @keyframes change-color {
+            0% {
+                background: red;
+            }
+
+            25% {
+                background: gold;
+            }
+
+            75% {
+                background: green;
+            }
+
+            100% {
+                background: skyblue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>
