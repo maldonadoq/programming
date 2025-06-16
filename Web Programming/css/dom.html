@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+</head>
+
+<body>
+    <h1>Web Programming</h1>
+
+    <p>Web programming, also known as web development, involves creating websites and web applications using programming
+        languages. It encompasses both the frontend (what users see) and backend (server-side logic and databases).
+        Popular languages include HTML, CSS, JavaScript, Python, PHP, and Java.</p>
+
+<script>
+    document.body.style.backgroundColor = 'skyblue';
+    document.body.style.color = 'tomato';
+    document.body.style.fontFamily = 'Courier';
+    document.body.style.margin = '40px';
+    document.body.style.border = '1px solid tomato';
+    document.body.style.padding = '20px';
+
+    setInterval(() => {
+        if (document.body.style.visibility === 'visible') {
+            document.body.style.visibility = 'hidden';
+        }
+        else {
+            document.body.style.visibility = 'visible';
+        }
+    }, 1000)
+</script>
+</body>
+
+</html>

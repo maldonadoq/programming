@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+</head>
+
+<body>
+    <div>
+        <p>First paragraph</p>
+        <p>Second paragraph</p>
+        <p>Third paragraph</p>
+    </div>
+
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ol>
+
+    <div>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </div>
+
+    <script>
+        const div1 = document.body.firstElementChild;
+        div1.style.backgroundColor = 'tomato';
+
+        const paragraph3 = div1.lastElementChild;
+        paragraph3.style.backgroundColor = 'skyblue';
+
+        const ol = div1.nextElementSibling;
+        ol.style.backgroundColor = 'darkseagreen';
+
+        const li4 = ol.lastElementChild;
+        const li3 = li4.previousElementSibling;
+        li3.style.backgroundColor = 'gold';
+
+        const div2 = ol.nextElementSibling;
+        const children = div2.children;
+        for (let item of children) {
+            item.style.backgroundColor = 'thistle';
+        }
+    </script>
+</body>
+
+</html>
