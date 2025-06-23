@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Menú Responsivo</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+        }
+
+        .menu {
+            display: flex;
+            gap: 20px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            transition: background 0.3s;
+        }
+
+        .menu a:hover {
+            background-color: #555;
+            border-radius: 4px;
+        }
+
+        .hamburguesa {
+            display: none;
+            font-size: 26px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .menu {
+                display: none;
+                flex-direction: column;
+                background-color: #333;
+                width: 100%;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                padding: 10px 0;
+            }
+
+            .menu a {
+                padding: 10px 20px;
+            }
+
+            .menu.active {
+                display: flex;
+            }
+
+            .hamburguesa {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Mi Sitio</div>
+        <div class="hamburguesa" onclick="toggleMenu()">☰</div>
+        <nav class="menu" id="menu">
+            <a href="#">Inicio</a>
+            <a href="#">Servicios</a>
+            <a href="#">Acerca de</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+
+    <main style="padding: 20px;">
+        <h1>Bienvenido a mi sitio web</h1>
+        <p>Este es un ejemplo de menú responsivo con el icono de hamburguesa.</p>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("active");
+        }
+    </script>
+
+</body>
+
+</html>
