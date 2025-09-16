@@ -1,0 +1,42 @@
+/* Variables */
+/* Mixin */
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background: #e1f0fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/* Tarjeta (Nesting + Operaciones) */
+.card {
+  width: 300px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card img {
+  border-radius: 50%;
+  width: 300px / 2;
+  margin-bottom: 10px;
+}
+.card h2 {
+  color: #3498db;
+}
+.card p {
+  color: #196090;
+}
+.card .btn {
+  background: #2ecc71;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.card .btn:hover {
+  opacity: 0.8;
+}
