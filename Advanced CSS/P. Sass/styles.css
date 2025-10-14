@@ -1,0 +1,39 @@
+header {
+  background: #3498db;
+  color: white;
+  text-align: center;
+}
+header h1 {
+  font-family: Arial, sans-serif;
+  font-size: 32px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+nav li {
+  display: inline-block;
+  margin-right: 15px;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+}
+nav a:hover {
+  color: #2ecc71;
+}
+
+.card {
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background: #2ecc71;
+  color: white;
+}
+.card p {
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=styles.css.map */

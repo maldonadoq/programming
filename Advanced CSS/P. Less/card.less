@@ -1,0 +1,55 @@
+/* Variables */
+@color-principal: #3498db;
+@color-secundario: #2ecc71;
+@radio: 8px;
+
+/* Mixin */
+.boton-estilo(@bg; @color: white) {
+    background: @bg;
+    color: @color;
+    padding: 10px 15px;
+    border: none;
+    border-radius: @radio;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.9;
+    }
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: lighten(@color-principal, 40%);
+}
+
+/* Tarjeta */
+.card {
+    width: 300px;
+    padding: 20px;
+    background: white;
+    text-align: center;
+    border-radius: @radio;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    img {
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        color: @color-principal;
+    }
+
+    p {
+        color: darken(@color-principal, 20%);
+    }
+
+    .btn {
+        .boton-estilo(@color-secundario);
+    }
+}

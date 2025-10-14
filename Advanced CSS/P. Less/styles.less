@@ -12,6 +12,7 @@
   border: none;
   border-radius: @radio;
   cursor: pointer;
+
   &:hover {
     opacity: 0.8;
   }
@@ -34,7 +35,7 @@ body {
   padding: 20px;
   border-radius: @radio;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
   img {
     border-radius: 50%;
@@ -52,5 +53,62 @@ body {
 
   .btn {
     .boton-estilo(@color-secundario);
+  }
+}
+
+
+.panel {
+  border: 5px solid blue;
+  background: lightblue;
+  margin: 10px;
+}
+
+.little-panel {
+  .panel();
+  font-size: 10px;
+  padding: 10px;
+}
+
+.big-panel {
+  .panel();
+  font-size: 20px;
+  padding: 20px;
+}
+
+.myborder(@color, @size) {
+  border: @size solid @color;
+}
+
+.myborder(@color) {
+  border: 1px solid @color;
+  padding: 20px;
+}
+
+.blockl {
+  .myborder(#000, 5px);
+}
+
+.block2 {
+  .myborder(#000);
+}
+
+
+@oneTheme: #fc5853;
+
+#side-nav {
+  background: #333;
+  padding: 10px;
+
+  a {
+    color: @oneTheme;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 15px;
+    display: block;
+  }
+
+  a:hover {
+    color: dodgerblue;
   }
 }

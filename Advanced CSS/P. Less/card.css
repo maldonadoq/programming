@@ -1,0 +1,43 @@
+/* Variables */
+/* Mixin */
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #e1f0fa;
+}
+/* Tarjeta */
+.card {
+  width: 300px;
+  padding: 20px;
+  background: white;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card img {
+  border-radius: 10%;
+  margin-bottom: 10px;
+  width: 200px;
+  height: 125px;
+}
+.card h2 {
+  color: #3498db;
+}
+.card p {
+  color: #196090;
+}
+.card .btn {
+  background: #2ecc71;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.card .btn:hover {
+  opacity: 0.9;
+}

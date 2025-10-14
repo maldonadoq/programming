@@ -40,3 +40,44 @@ body {
 .card .btn:hover {
   opacity: 0.8;
 }
+.panel {
+  border: 5px solid blue;
+  background: lightblue;
+  margin: 10px;
+}
+.little-panel {
+  border: 5px solid blue;
+  background: lightblue;
+  margin: 10px;
+  font-size: 10px;
+  padding: 10px;
+}
+.big-panel {
+  border: 5px solid blue;
+  background: lightblue;
+  margin: 10px;
+  font-size: 20px;
+  padding: 20px;
+}
+.blockl {
+  border: 5px solid #000;
+}
+.block2 {
+  border: 1px solid #000;
+  padding: 20px;
+}
+#side-nav {
+  background: #333;
+  padding: 10px;
+}
+#side-nav a {
+  color: #fc5853;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 15px;
+  display: block;
+}
+#side-nav a:hover {
+  color: dodgerblue;
+}

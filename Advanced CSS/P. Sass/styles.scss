@@ -1,0 +1,54 @@
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$font-stack: Arial, sans-serif;
+
+// Mixin
+@mixin box-style($padding, $margin) {
+    padding: $padding;
+    margin: $margin;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+// Estilos
+header {
+    background: $primary-color;
+    color: white;
+    text-align: center;
+
+    h1 {
+        font-family: $font-stack;
+        font-size: 16px * 2;
+    }
+}
+
+nav {
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+}
+
+.card {
+    @include box-style(20px, 10px);
+    background: $secondary-color;
+    color: white;
+
+    p {
+        font-size: 16px - 2;
+    }
+}

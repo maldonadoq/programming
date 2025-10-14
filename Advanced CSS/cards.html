@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Práctica: Transiciones y Transformaciones</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f2f2f2;
+      text-align: center;
+      padding: 30px;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .contenedor {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .tarjeta {
+      width: 250px;
+      background-color: #3498db;
+      color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: left;
+      transition: transform 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
+    }
+
+    .tarjeta h2 {
+      margin-top: 0;
+    }
+
+    .tarjeta:hover {
+      transform: scale(1.08) translateY(-10px);
+      background-color: #2ecc71;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    @media (max-width: 700px) {
+      .contenedor {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Transiciones y Transformaciones</h1>
+
+  <div class="contenedor">
+    <div class="tarjeta">
+      <h2>Tarjeta 1</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="tarjeta">
+      <h2>Tarjeta 2</h2>
+      <p>Consequuntur laboriosam quas quisquam facilis facere illo.</p>
+    </div>
+
+    <div class="tarjeta">
+      <h2>Tarjeta 3</h2>
+      <p>Magni assumenda repudiandae necessitatibus earum quidem pariatur.</p>
+    </div>
+  </div>
+
+</body>
+
+</html>
