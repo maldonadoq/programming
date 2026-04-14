@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Percy Maldonado</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #fef6e4;
+            color: #001858;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #a582ae;
+            color: white;
+            padding: 5px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #fcd5ce;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #6d6875;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 30px 30px 0px 30px;
+            background-color: #fff1e6;
+        }
+
+        main {
+            flex: 2;
+            min-width: 300px;
+            padding-right: 20px;
+        }
+
+        aside {
+            flex: 1;
+            min-width: 280px;
+            background-color: #e5eaf5;
+            padding: 10px;
+            border-radius: 10px;
+            height: fit-content;
+        }
+
+        aside form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        aside form input,
+        aside form textarea {
+            width: 90%;
+            margin: 8px auto;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: inherit;
+            display: block;
+        }
+
+        aside form label {
+            width: 90%;
+            text-align: left;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+
+        aside form button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #a582ae;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        aside form button:hover {
+            background-color: #8e6e9b;
+        }
+
+        .contact {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #d8e2dc;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #b8c1ec;
+            color: #333;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Percy Maldonado Quispe</h1>
+    </header>
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Sobre mí</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+    <div class="container">
+        <main>
+            <section>
+                <h2>¿Qué estamos aprendiendo?</h2>
+                <p>Estamos viendo la estructura de una página HTML. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem ab nam veniam delectus, a deleniti. Debitis, voluptate, odio nostrum sapiente modi maiores dolores perferendis rem nulla enim, animi voluptatibus quis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </section>
+
+            <section>
+                <h2>¿Por qué usar colores pastel?</h2>
+                <p>Los colores pastel son suaves y agradables a la vista, ideales para proyectos con una estética ligera y profesional. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus suscipit voluptatum incidunt nostrum id, architecto tempore velit, harum molestias quis temporibus odit cupiditate ad possimus quisquam fugiat. Optio, illo voluptatum. Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </section>
+        </main>
+
+        <aside>
+            <h2 class="contact">Formulario de Contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </aside>
+    </div>
+
+    <footer>
+        <p>Percy Maldonado Quispe – 2025</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo Tailwind CSS - Clase UTP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- NAVBAR -->
+    <nav class="bg-blue-600 text-white p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold">Tailwind Demo</h1>
+            <ul class="flex space-x-4">
+                <li><a href="#" class="hover:text-yellow-300">Inicio</a></li>
+                <li><a href="#" class="hover:text-yellow-300">Componentes</a></li>
+                <li><a href="#" class="hover:text-yellow-300">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO / PRESENTACIÓN -->
+    <header class="bg-white shadow p-10 mt-4 container mx-auto rounded-xl">
+        <h2 class="text-4xl font-bold mb-4">Ejemplo de Tailwind CSS</h2>
+        <p class="text-lg mb-6">
+            Esta página demuestra los conceptos vistos en clase: utilidades, diseño responsive,
+            componentes reutilizables y personalización rápida.
+        </p>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded">
+            Ver más
+        </button>
+    </header>
+
+    <!-- SECCIÓN DE TARJETAS -->
+    <section class="container mx-auto mt-10">
+        <h3 class="text-3xl font-bold mb-6">Componentes con Tailwind</h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+            <!-- Tarjeta 1 -->
+            <div class="bg-white shadow-lg p-6 rounded-xl hover:shadow-2xl transition">
+                <h4 class="font-bold text-xl mb-3">Colores & Tipografía</h4>
+                <p class="mb-4">
+                    Tailwind permite personalizar colores, tamaños de texto y espaciados con
+                    clases utilitarias.
+                </p>
+                <button class="bg-green-500 hover:bg-green-700 text-white py-2 px-4 rounded">
+                    Leer más
+                </button>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="bg-white shadow-lg p-6 rounded-xl hover:shadow-2xl transition">
+                <h4 class="font-bold text-xl mb-3">Diseño Responsive</h4>
+                <p class="mb-4">
+                    Las clases <code>sm:</code>, <code>md:</code>, <code>lg:</code> permiten adaptar
+                    el diseño a cualquier tamaño de pantalla.
+                </p>
+                <button class="bg-purple-500 hover:bg-purple-700 text-white py-2 px-4 rounded">
+                    Ejemplos
+                </button>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="bg-white shadow-lg p-6 rounded-xl hover:shadow-2xl transition">
+                <h4 class="font-bold text-xl mb-3">Componentes</h4>
+                <p class="mb-4">
+                    Crear botones, tarjetas, layouts o dashboards es rápido gracias a las clases
+                    utilitarias.
+                </p>
+                <button class="bg-red-500 hover:bg-red-700 text-white py-2 px-4 rounded">
+                    Ver más
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECCIÓN DEMO DE UTILITIES -->
+    <section class="container mx-auto mt-12 bg-white p-8 rounded-xl shadow">
+        <h3 class="text-3xl font-bold mb-6">Demostración de Utilidades</h3>
+
+        <div class="flex flex-wrap gap-4">
+
+            <div class="p-4 bg-blue-200 rounded-lg">bg-blue-200</div>
+            <div class="p-4 bg-blue-400 text-white rounded-lg">bg-blue-400</div>
+            <div class="p-4 border border-gray-400 rounded-lg">border & rounded</div>
+            <div class="p-4 shadow-lg bg-gray-50 rounded-lg">shadow-lg</div>
+            <div class="p-4 bg-yellow-300 font-bold rounded-lg">font-bold</div>
+            <div class="p-4 bg-green-300 hover:bg-green-500 rounded-lg cursor-pointer">
+                hover:bg-green-500
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-blue-600 text-white mt-12 p-6">
+        <div class="container mx-auto text-center">
+            <p class="text-sm">Ejemplo para la clase UTP – Tailwind CSS</p>
+            <p class="text-xs">Ingeniería de Sistemas – Hojas de Estilo en Cascada Avanzado</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
