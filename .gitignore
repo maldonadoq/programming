@@ -1,2 +1,3 @@
 *.out
 */PA*
+.DS_Store
