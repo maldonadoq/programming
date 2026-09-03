@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: white;
+    padding: 15px 30px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: center;
+}
+
+label{
+    margin-top: 10px;
+}
+
+input{
+    margin-top: 5px;
+    padding: 8px;
+}
