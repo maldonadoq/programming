@@ -1,8 +1,8 @@
 #include <GL/glut.h>
 
+// OpenGL V2
 void display()
 {
-
     glClear(GL_COLOR_BUFFER_BIT);
 
     // TRIÁNGULO
@@ -26,7 +26,7 @@ void display()
 
     // LÍNEA
     glColor3f(0.0f, 1.0f, 0.0f);
-    glLineWidth(4.0f);
+    glLineWidth(10.0f);
 
     glBegin(GL_LINES);
     glVertex2f(-0.8f, -0.5f);
