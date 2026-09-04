@@ -74,11 +74,20 @@ void Application::initializeWindow()
 
     glfwSwapInterval(1);
 
+    int framebufferWidth;
+    int framebufferHeight;
+
+    glfwGetFramebufferSize(window, &framebufferWidth, &framebufferHeight);
+
+    width = framebufferWidth;
+    height = framebufferHeight;
+
     glViewport(0, 0, width, height);
     glEnable(GL_DEPTH_TEST);
 
     std::cout << "OpenGL: " << glGetString(GL_VERSION) << '\n';
     std::cout << "GPU: " << glGetString(GL_RENDERER) << '\n';
+    std::cout << "Framebuffer: " << width << " x " << height << '\n';
 }
 
 void Application::run()
