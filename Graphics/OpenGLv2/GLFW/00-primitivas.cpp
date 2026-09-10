@@ -36,6 +36,7 @@ void display()
     glEnd();
 }
 
+// g++ 00-primitivas.cpp -o 00-primitivas.out -I/opt/homebrew/opt/glfw/include -L/opt/homebrew/opt/glfw/lib -lglfw -framework OpenGL
 int main(int argc, char const *argv[])
 {
     // Inicializar GLFW

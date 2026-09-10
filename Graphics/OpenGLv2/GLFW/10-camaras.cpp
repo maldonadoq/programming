@@ -570,8 +570,9 @@ void resizeCallback(
 // =====================================================
 // MAIN
 // =====================================================
+// g++ 10-camaras.cpp -o 10-camaras.out -I/opt/homebrew/opt/glfw/include -L/opt/homebrew/opt/glfw/lib -lglfw -framework OpenGL
 
-int main()
+int main(int argc, char const *argv[])
 {
     if (!glfwInit())
     {
